@@ -1,0 +1,13 @@
+<html>
+
+<body>
+    <%- include("comman1/header"); %>
+    <h1>pofile page, welcome  <%= user.name %> </h1>
+
+    <ul>
+        <% user.skills.forEach((items)=>{%>
+<li> <%=items %></li>
+            <% }) %>
+    </ul>
+</body>
+</html>
